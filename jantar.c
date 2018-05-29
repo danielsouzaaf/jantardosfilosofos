@@ -16,10 +16,10 @@ void filosofo(int id) {
 		pensar();
 		down(&mutex);
 		pegar_garfo(id);
-		pegar_garfo(direita);
+		pegar_garfo(DIREITA);
 		comer();
 		largar_garfo(id);
-		largar_garfo(direita);
+		largar_garfo(DIREITA);
 		up(&mutex);
 	}
 	}
